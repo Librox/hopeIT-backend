@@ -16,9 +16,10 @@ ActiveRecord::Schema.define(version: 20171027154242) do
   enable_extension "plpgsql"
 
   create_table "donation_types", force: :cascade do |t|
-    t.string "name"
+    t.string "name", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["name"], name: "index_donation_types_on_name", unique: true
   end
 
   create_table "donations", force: :cascade do |t|
@@ -33,16 +34,16 @@ ActiveRecord::Schema.define(version: 20171027154242) do
   end
 
   create_table "donors", force: :cascade do |t|
-    t.string "name"
-    t.string "mail"
+    t.string "name", default: "", null: false
+    t.string "mail", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "patients", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.string "photo"
+    t.string "name", default: "", null: false
+    t.text "description", default: "", null: false
+    t.string "photo", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
