@@ -3,6 +3,11 @@
 module Api
   module V1
     class PaymentsController < BaseController
+      expose(:payments) { Payment.includes([:donation]).all }
+
+      api :GET, "/v1/payments", "Get a list of payments"
+      def index; end
+
       api :POST, "/v1/payments/payu", "Confirm payment"
       def payu
         # TODO: accept only from PayU IP addresses

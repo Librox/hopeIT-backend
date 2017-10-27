@@ -8,6 +8,7 @@ Rails.application.routes.draw do
       post "payments/payu", to: "payments#payu"
       resources :patients, only: [:index]
       resources :donations, only: [:create]
+      resources :payments, only: [:index]
     end
   end
 end
