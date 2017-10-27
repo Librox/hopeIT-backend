@@ -10,24 +10,24 @@
       "request_data": {
         "donation": {
           "amount": 1000,
-          "donation_type_id": 1,
-          "patient_id": 1
+          "donation_type_id": 5,
+          "patient_id": 11
         }
       },
       "response_data": {
         "donation": {
-          "id": 1,
+          "id": 3,
           "amount": 1000,
-          "donor_id": 1,
-          "donation_type_id": 1,
-          "created_at": "2017-10-27T20:17:22.242Z",
-          "updated_at": "2017-10-27T20:17:22.242Z",
+          "donor_id": 5,
+          "donation_type_id": 5,
+          "created_at": "2017-10-27T21:57:55.005Z",
+          "updated_at": "2017-10-27T21:57:55.005Z",
           "payment": {
-            "id": 1,
+            "id": 3,
             "amount": 0,
             "status": "pending",
-            "created_at": "2017-10-27T20:17:22.267Z",
-            "updated_at": "2017-10-27T20:17:22.267Z"
+            "created_at": "2017-10-27T21:57:55.011Z",
+            "updated_at": "2017-10-27T21:57:55.011Z"
           }
         }
       },
@@ -45,24 +45,24 @@
       "request_data": {
         "donation": {
           "amount": 1000,
-          "donation_type_id": 2,
-          "patient_id": 2
+          "donation_type_id": 6,
+          "patient_id": 12
         }
       },
       "response_data": {
         "donation": {
-          "id": 2,
+          "id": 4,
           "amount": 1000,
-          "donor_id": 2,
-          "donation_type_id": 2,
-          "created_at": "2017-10-27T20:17:22.298Z",
-          "updated_at": "2017-10-27T20:17:22.298Z",
+          "donor_id": 6,
+          "donation_type_id": 6,
+          "created_at": "2017-10-27T21:57:55.033Z",
+          "updated_at": "2017-10-27T21:57:55.033Z",
           "payment": {
-            "id": 2,
+            "id": 4,
             "amount": 0,
             "status": "pending",
-            "created_at": "2017-10-27T20:17:22.302Z",
-            "updated_at": "2017-10-27T20:17:22.302Z"
+            "created_at": "2017-10-27T21:57:55.039Z",
+            "updated_at": "2017-10-27T21:57:55.039Z"
           }
         }
       },
@@ -83,28 +83,28 @@
       "response_data": {
         "patients": [
           {
+            "id": 1,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T21:57:54.777Z",
+            "updated_at": "2017-10-27T21:57:54.777Z"
+          },
+          {
+            "id": 2,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T21:57:54.781Z",
+            "updated_at": "2017-10-27T21:57:54.781Z"
+          },
+          {
             "id": 3,
             "name": "MyString",
             "description": "MyText",
             "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.322Z",
-            "updated_at": "2017-10-27T20:17:22.322Z"
-          },
-          {
-            "id": 4,
-            "name": "MyString",
-            "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.324Z",
-            "updated_at": "2017-10-27T20:17:22.324Z"
-          },
-          {
-            "id": 5,
-            "name": "MyString",
-            "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.326Z",
-            "updated_at": "2017-10-27T20:17:22.326Z"
+            "created_at": "2017-10-27T21:57:54.783Z",
+            "updated_at": "2017-10-27T21:57:54.783Z"
           }
         ]
       },
@@ -123,30 +123,84 @@
       "response_data": {
         "patients": [
           {
+            "id": 4,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T21:57:54.822Z",
+            "updated_at": "2017-10-27T21:57:54.822Z"
+          },
+          {
+            "id": 5,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T21:57:54.824Z",
+            "updated_at": "2017-10-27T21:57:54.824Z"
+          },
+          {
             "id": 6,
             "name": "MyString",
             "description": "MyText",
             "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.344Z",
-            "updated_at": "2017-10-27T20:17:22.344Z"
-          },
-          {
-            "id": 7,
-            "name": "MyString",
-            "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.347Z",
-            "updated_at": "2017-10-27T20:17:22.347Z"
-          },
-          {
-            "id": 8,
-            "name": "MyString",
-            "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T20:17:22.349Z",
-            "updated_at": "2017-10-27T20:17:22.349Z"
+            "created_at": "2017-10-27T21:57:54.826Z",
+            "updated_at": "2017-10-27T21:57:54.826Z"
           }
         ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "payments#payu": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/payments/payu",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "order": {
+          "orderId": "123test123",
+          "extOrderId": "testpaymentuuid",
+          "totalAmount": 1000,
+          "status": "COMPLETED"
+        }
+      },
+      "response_data": {
+        "id": 1,
+        "amount": 1000,
+        "status": "COMPLETED",
+        "order_id": "123test123",
+        "payment_uuid": "testpaymentuuid"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/v1/payments/payu",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "order": {
+          "orderId": "123test123",
+          "extOrderId": "testpaymentuuid",
+          "totalAmount": 1000,
+          "status": "COMPLETED"
+        }
+      },
+      "response_data": {
+        "id": 2,
+        "amount": 1000,
+        "status": "COMPLETED",
+        "order_id": "123test123",
+        "payment_uuid": "testpaymentuuid"
       },
       "code": 200,
       "show_in_doc": 1,
