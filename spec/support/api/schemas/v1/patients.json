@@ -1,0 +1,41 @@
+{
+  "properties": {
+    "patients": {
+      "id": "/properties/patients",
+      "items": {
+        "id": "/properties/patients/items",
+        "properties": {
+          "created_at": {
+            "id": "/properties/patients/items/properties/created_at",
+            "type": "string",
+            "format": "date-time"
+          },
+          "description": {
+            "id": "/properties/patients/items/properties/description",
+            "type": "string"
+          },
+          "id": {
+            "id": "/properties/patients/items/properties/id",
+            "type": "integer"
+          },
+          "name": {
+            "id": "/properties/patients/items/properties/name",
+            "type": "string"
+          },
+          "photo": {
+            "id": "/properties/patients/items/properties/photo",
+            "type": "string"
+          },
+          "updated_at": {
+            "id": "/properties/patients/items/properties/updated_at",
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "type": "object"
+      },
+      "type": "array"
+    }
+  },
+  "type": "object"
+}

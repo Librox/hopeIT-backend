@@ -108,8 +108,6 @@ GEM
     factory_bot_rails (4.8.2)
       factory_bot (~> 4.8.2)
       railties (>= 3.0.0)
-    faraday (0.13.1)
-      multipart-post (>= 1.2, < 3)
     fasterer (0.3.2)
       colorize (~> 0.7)
       ruby_parser (~> 3.7)
@@ -119,7 +117,14 @@ GEM
     i18n (0.9.0)
       concurrent-ruby (~> 1.0)
     iniparse (1.4.4)
+    jbuilder (2.7.0)
+      activesupport (>= 4.2.0)
+      multi_json (>= 1.2)
     json (2.1.0)
+    json-schema (2.8.0)
+      addressable (>= 2.4)
+    json_matchers (0.7.2)
+      json-schema (~> 2.7)
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
@@ -142,7 +147,6 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.10.3)
     multi_json (1.12.2)
-    multipart-post (2.0.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (4.2.0)
@@ -245,8 +249,6 @@ GEM
     ruby_dep (1.5.0)
     ruby_parser (3.10.1)
       sexp_processor (~> 4.9)
-    sentry-raven (2.7.1)
-      faraday (>= 0.7.6, < 1.0)
     sexp_processor (4.10.0)
     shoulda-matchers (3.1.2)
       activesupport (>= 4.0.0)
@@ -307,6 +309,8 @@ DEPENDENCIES
   factory_bot
   factory_bot_rails
   fasterer
+  jbuilder
+  json_matchers
   letter_opener
   listen
   maruku
@@ -326,7 +330,6 @@ DEPENDENCIES
   rbnacl-libsodium
   rspec-rails
   rubocop
-  sentry-raven
   shoulda-matchers
   spring
   spring-watcher-listen

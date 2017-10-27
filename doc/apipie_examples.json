@@ -1,0 +1,44 @@
+{
+  "patients#index": [
+    {
+      "verb": "GET",
+      "path": "/api/v1/patients",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "patients": [
+          {
+            "id": 1,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T17:42:15.559Z",
+            "updated_at": "2017-10-27T17:42:15.559Z"
+          },
+          {
+            "id": 2,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T17:42:15.562Z",
+            "updated_at": "2017-10-27T17:42:15.562Z"
+          },
+          {
+            "id": 3,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T17:42:15.564Z",
+            "updated_at": "2017-10-27T17:42:15.564Z"
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}
