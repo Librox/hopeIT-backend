@@ -1,3 +1,18 @@
-%h1 Donors
-- @donors.each do |d|
-  %h2= link_to d.name, d
+.content
+  .container-fluid
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Simple Table
+            %p.category Here is a subtitle for this table
+          .card-content.table-responsive
+            %table.table
+              %thead.text-primary
+                %th Name
+                %th Mail
+              %tbody
+                -@donors.each do |d|
+                  %tr
+                    %td= link_to d.name, d
+                    %td= d.email
