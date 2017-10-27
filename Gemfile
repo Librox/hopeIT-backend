@@ -23,6 +23,7 @@ gem 'turbolinks', '~> 5.0.0'
 gem 'devise'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'html2haml', '~> 2.2'
+gem 'simple_form'
 group :development do
   gem 'rbnacl-libsodium'
   gem 'rbnacl', '< 5.0'

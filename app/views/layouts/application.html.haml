@@ -6,7 +6,30 @@
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
   %body
+    %nav.navbar.navbar-default
+      .container-fluid
+        / Brand and toggle get grouped for better mobile display
+        .navbar-header
+          %a.navbar-brand{:href => "#"} HopeIT
+        / Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li.dropdown
+            -if admin_signed_in?
+              %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+                = "Witaj #{admin.name}"
+                %span.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => "#"} Darczyńcy
+                %li
+                  %a{:href => "#"} Wyślij wiadomość
+                %li
+                  %a{:href => "#"} Wyślij notyfikację
+        / /.navbar-collapse
+      / /.container-fluid
     = yield
     %p.notice= notice
     %p.alert= alert
