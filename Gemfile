@@ -16,6 +16,7 @@ gem 'pundit'
 gem 'carrierwave'
 gem 'carrierwave-base64'
 gem 'jbuilder'
+gem 'http'
 group :development do
   gem 'rbnacl-libsodium'
   gem 'rbnacl', '< 5.0'

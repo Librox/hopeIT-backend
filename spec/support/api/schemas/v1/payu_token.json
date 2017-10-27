@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "access_token": {
+      "id": "/properties/access_token", 
+      "type": "string"
+    }, 
+    "expires_in": {
+      "id": "/properties/expires_in", 
+      "type": "integer"
+    }, 
+    "grant_type": {
+      "id": "/properties/grant_type", 
+      "type": "string"
+    }, 
+    "refresh_token": {
+      "id": "/properties/refresh_token", 
+      "type": "string"
+    }, 
+    "scope": {
+      "id": "/properties/scope", 
+      "type": "string"
+    }, 
+    "token_type": {
+      "id": "/properties/token_type", 
+      "type": "string"
+    }
+  }, 
+  "type": "object"
+}

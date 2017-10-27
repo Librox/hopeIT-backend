@@ -10,24 +10,24 @@
       "request_data": {
         "donation": {
           "amount": 1000,
-          "donation_type_id": 5,
-          "patient_id": 11
+          "donation_type_id": 1,
+          "patient_id": 1
         }
       },
       "response_data": {
         "donation": {
-          "id": 3,
+          "id": 1,
           "amount": 1000,
-          "donor_id": 5,
-          "donation_type_id": 5,
-          "created_at": "2017-10-27T21:57:55.005Z",
-          "updated_at": "2017-10-27T21:57:55.005Z",
+          "donor_id": 1,
+          "donation_type_id": 1,
+          "created_at": "2017-10-27T22:26:40.670Z",
+          "updated_at": "2017-10-27T22:26:40.670Z",
           "payment": {
-            "id": 3,
+            "id": 1,
             "amount": 0,
             "status": "pending",
-            "created_at": "2017-10-27T21:57:55.011Z",
-            "updated_at": "2017-10-27T21:57:55.011Z"
+            "created_at": "2017-10-27T22:26:40.690Z",
+            "updated_at": "2017-10-27T22:26:40.690Z"
           }
         }
       },
@@ -45,24 +45,24 @@
       "request_data": {
         "donation": {
           "amount": 1000,
-          "donation_type_id": 6,
-          "patient_id": 12
+          "donation_type_id": 2,
+          "patient_id": 2
         }
       },
       "response_data": {
         "donation": {
-          "id": 4,
+          "id": 2,
           "amount": 1000,
-          "donor_id": 6,
-          "donation_type_id": 6,
-          "created_at": "2017-10-27T21:57:55.033Z",
-          "updated_at": "2017-10-27T21:57:55.033Z",
+          "donor_id": 2,
+          "donation_type_id": 2,
+          "created_at": "2017-10-27T22:26:40.717Z",
+          "updated_at": "2017-10-27T22:26:40.717Z",
           "payment": {
-            "id": 4,
+            "id": 2,
             "amount": 0,
             "status": "pending",
-            "created_at": "2017-10-27T21:57:55.039Z",
-            "updated_at": "2017-10-27T21:57:55.039Z"
+            "created_at": "2017-10-27T22:26:40.722Z",
+            "updated_at": "2017-10-27T22:26:40.722Z"
           }
         }
       },
@@ -83,28 +83,28 @@
       "response_data": {
         "patients": [
           {
-            "id": 1,
+            "id": 7,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.777Z",
-            "updated_at": "2017-10-27T21:57:54.777Z"
+            "created_at": "2017-10-27T22:26:41.436Z",
+            "updated_at": "2017-10-27T22:26:41.436Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           },
           {
-            "id": 2,
+            "id": 8,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.781Z",
-            "updated_at": "2017-10-27T21:57:54.781Z"
+            "created_at": "2017-10-27T22:26:41.439Z",
+            "updated_at": "2017-10-27T22:26:41.439Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           },
           {
-            "id": 3,
+            "id": 9,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.783Z",
-            "updated_at": "2017-10-27T21:57:54.783Z"
+            "created_at": "2017-10-27T22:26:41.442Z",
+            "updated_at": "2017-10-27T22:26:41.442Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           }
         ]
       },
@@ -123,28 +123,28 @@
       "response_data": {
         "patients": [
           {
-            "id": 4,
+            "id": 10,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.822Z",
-            "updated_at": "2017-10-27T21:57:54.822Z"
+            "created_at": "2017-10-27T22:26:41.464Z",
+            "updated_at": "2017-10-27T22:26:41.464Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           },
           {
-            "id": 5,
+            "id": 11,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.824Z",
-            "updated_at": "2017-10-27T21:57:54.824Z"
+            "created_at": "2017-10-27T22:26:41.466Z",
+            "updated_at": "2017-10-27T22:26:41.466Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           },
           {
-            "id": 6,
+            "id": 12,
             "name": "MyString",
             "description": "MyText",
-            "photo": "MyString",
-            "created_at": "2017-10-27T21:57:54.826Z",
-            "updated_at": "2017-10-27T21:57:54.826Z"
+            "created_at": "2017-10-27T22:26:41.469Z",
+            "updated_at": "2017-10-27T22:26:41.469Z",
+            "photo": "http://lorempixel.com/400/200/sports/1"
           }
         ]
       },
@@ -170,7 +170,7 @@
         }
       },
       "response_data": {
-        "id": 1,
+        "id": 3,
         "amount": 1000,
         "status": "COMPLETED",
         "order_id": "123test123",
@@ -196,11 +196,61 @@
         }
       },
       "response_data": {
-        "id": 2,
+        "id": 4,
         "amount": 1000,
         "status": "COMPLETED",
         "order_id": "123test123",
         "payment_uuid": "testpaymentuuid"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "payu#token": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/payu/token",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "payu": {
+          "email": "herp@derp.in"
+        }
+      },
+      "response_data": {
+        "access_token": "a2e0075a-9edd-4971-aaa9-193d1db9b220",
+        "token_type": "bearer",
+        "refresh_token": "0268ee8f-a8a9-4835-ab29-7e324646e0b5",
+        "expires_in": 43199,
+        "scope": "mobile.sdk",
+        "grant_type": "trusted_merchant"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/v1/payu/token",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "payu": {
+          "email": "herp@derp.in"
+        }
+      },
+      "response_data": {
+        "access_token": "223f523b-a31e-412f-b524-aed768d61cec",
+        "token_type": "bearer",
+        "refresh_token": "5c574b85-1e32-49d4-a06c-1195cb93426a",
+        "expires_in": 43199,
+        "scope": "mobile.sdk",
+        "grant_type": "trusted_merchant"
       },
       "code": 200,
       "show_in_doc": 1,
