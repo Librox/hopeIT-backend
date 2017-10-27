@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171027170341) do
+ActiveRecord::Schema.define(version: 20171027170534) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -52,6 +52,17 @@ ActiveRecord::Schema.define(version: 20171027170341) do
     t.index ["email"], name: "index_donors_on_email", unique: true
   end
 
+  create_table "messages", force: :cascade do |t|
+    t.bigint "donor_id"
+    t.bigint "administrator_id"
+    t.string "title"
+    t.text "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["administrator_id"], name: "index_messages_on_administrator_id"
+    t.index ["donor_id"], name: "index_messages_on_donor_id"
+  end
+
   create_table "patients", force: :cascade do |t|
     t.string "name", default: "", null: false
     t.text "description", default: "", null: false
@@ -70,5 +81,7 @@ ActiveRecord::Schema.define(version: 20171027170341) do
   add_foreign_key "donations", "donation_types"
   add_foreign_key "donations", "donors"
   add_foreign_key "donations", "patients"
+  add_foreign_key "messages", "administrators"
+  add_foreign_key "messages", "donors"
   add_foreign_key "payments", "donations"
 end
