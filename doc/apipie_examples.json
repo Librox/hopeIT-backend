@@ -11,7 +11,8 @@
         "donation": {
           "amount": 1000,
           "donation_type_id": 1,
-          "patient_id": 1
+          "patient_id": 1,
+          "payment_uuid": "89066861-f063-41e1-b391-bac3723b88db"
         }
       },
       "response_data": {
@@ -20,14 +21,15 @@
           "amount": 1000,
           "donor_id": 1,
           "donation_type_id": 1,
-          "created_at": "2017-10-27T22:26:40.670Z",
-          "updated_at": "2017-10-27T22:26:40.670Z",
+          "created_at": "2017-10-27T23:45:14.171Z",
+          "updated_at": "2017-10-27T23:45:14.171Z",
           "payment": {
             "id": 1,
             "amount": 0,
+            "payment_uuid": "89066861-f063-41e1-b391-bac3723b88db",
             "status": "pending",
-            "created_at": "2017-10-27T22:26:40.690Z",
-            "updated_at": "2017-10-27T22:26:40.690Z"
+            "created_at": "2017-10-27T23:45:14.191Z",
+            "updated_at": "2017-10-27T23:45:14.191Z"
           }
         }
       },
@@ -46,7 +48,8 @@
         "donation": {
           "amount": 1000,
           "donation_type_id": 2,
-          "patient_id": 2
+          "patient_id": 2,
+          "payment_uuid": "0b38f782-7a7b-4f2d-8b9f-49d2442ce860"
         }
       },
       "response_data": {
@@ -55,14 +58,15 @@
           "amount": 1000,
           "donor_id": 2,
           "donation_type_id": 2,
-          "created_at": "2017-10-27T22:26:40.717Z",
-          "updated_at": "2017-10-27T22:26:40.717Z",
+          "created_at": "2017-10-27T23:45:14.228Z",
+          "updated_at": "2017-10-27T23:45:14.228Z",
           "payment": {
             "id": 2,
             "amount": 0,
+            "payment_uuid": "0b38f782-7a7b-4f2d-8b9f-49d2442ce860",
             "status": "pending",
-            "created_at": "2017-10-27T22:26:40.722Z",
-            "updated_at": "2017-10-27T22:26:40.722Z"
+            "created_at": "2017-10-27T23:45:14.232Z",
+            "updated_at": "2017-10-27T23:45:14.232Z"
           }
         }
       },
@@ -86,25 +90,25 @@
             "id": 7,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.436Z",
-            "updated_at": "2017-10-27T22:26:41.436Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.860Z",
+            "updated_at": "2017-10-27T23:45:14.860Z"
           },
           {
             "id": 8,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.439Z",
-            "updated_at": "2017-10-27T22:26:41.439Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.865Z",
+            "updated_at": "2017-10-27T23:45:14.865Z"
           },
           {
             "id": 9,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.442Z",
-            "updated_at": "2017-10-27T22:26:41.442Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.870Z",
+            "updated_at": "2017-10-27T23:45:14.870Z"
           }
         ]
       },
@@ -126,25 +130,25 @@
             "id": 10,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.464Z",
-            "updated_at": "2017-10-27T22:26:41.464Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.915Z",
+            "updated_at": "2017-10-27T23:45:14.915Z"
           },
           {
             "id": 11,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.466Z",
-            "updated_at": "2017-10-27T22:26:41.466Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.918Z",
+            "updated_at": "2017-10-27T23:45:14.918Z"
           },
           {
             "id": 12,
             "name": "MyString",
             "description": "MyText",
-            "created_at": "2017-10-27T22:26:41.469Z",
-            "updated_at": "2017-10-27T22:26:41.469Z",
-            "photo": "http://lorempixel.com/400/200/sports/1"
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.922Z",
+            "updated_at": "2017-10-27T23:45:14.922Z"
           }
         ]
       },
@@ -221,9 +225,9 @@
         }
       },
       "response_data": {
-        "access_token": "a2e0075a-9edd-4971-aaa9-193d1db9b220",
+        "access_token": "0c311086-6810-472d-8885-0e47a0252f92",
         "token_type": "bearer",
-        "refresh_token": "0268ee8f-a8a9-4835-ab29-7e324646e0b5",
+        "refresh_token": "e2a6d500-ff23-465c-9ab4-1f374ea3e951",
         "expires_in": 43199,
         "scope": "mobile.sdk",
         "grant_type": "trusted_merchant"
@@ -245,9 +249,9 @@
         }
       },
       "response_data": {
-        "access_token": "223f523b-a31e-412f-b524-aed768d61cec",
+        "access_token": "270d69a8-db2d-4580-9f99-b3f477c3fa89",
         "token_type": "bearer",
-        "refresh_token": "5c574b85-1e32-49d4-a06c-1195cb93426a",
+        "refresh_token": "8a5270ec-8f83-4c27-9d8f-c4a88de66d7b",
         "expires_in": 43199,
         "scope": "mobile.sdk",
         "grant_type": "trusted_merchant"

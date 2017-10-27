@@ -11,6 +11,7 @@ module Api
           param :amount, Integer, required: true
           param :patient_id, Integer, required: true
           param :donation_type_id, Integer, required: true
+          param :payment_uuid, String, required: true
         end
       end
 
@@ -23,6 +24,7 @@ module Api
           patient_id: donation_params[:patient_id],
           amount: donation_params[:amount],
           donation_type_id: donation_params[:donation_type_id],
+          payment_uuid: donation_params[:payment_uuid],
         ).call
 
         if donation
@@ -37,7 +39,8 @@ module Api
       def donation_params
         params.require(:donation).permit(:amount,
                                          :patient_id,
-                                         :donation_type_id)
+                                         :donation_type_id,
+                                         :payment_uuid)
       end
     end
   end

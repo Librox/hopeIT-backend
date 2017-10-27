@@ -16,6 +16,7 @@ RSpec.describe "Donations", type: :request do
         donation: FactoryBot.attributes_for(:donation)
                             .merge!(donation_type_id: donation_type.id)
                             .merge!(patient_id: patient.id)
+                            .merge!(payment_uuid: SecureRandom.uuid)
       }
     }
     it "returns 201 Created" do

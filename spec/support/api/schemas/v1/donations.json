@@ -29,6 +29,10 @@
         "payment": {
           "id": "/properties/donation/properties/payment", 
           "properties": {
+            "payment_uuid": {
+              "id": "/properties/donation/properties/payment/properties/payment_uuid", 
+              "type": "string"
+            }, 
             "amount": {
               "id": "/properties/donation/properties/payment/properties/amount", 
               "type": "integer"
