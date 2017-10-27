@@ -16,6 +16,8 @@ gem 'pundit'
 gem 'sentry-raven'
 gem 'carrierwave'
 gem 'carrierwave-base64'
+gem 'trestle'
+gem 'trestle-auth'
 group :development do
   gem 'rbnacl-libsodium'
   gem 'rbnacl', '< 5.0'
