@@ -1,6 +1,3 @@
 %h1 Donors
 - @donors.each do |d|
-  %h2= "#{d.name}'s messages:"
-  - d.messages.each do |m|
-    %h4= m.title
-    %p= m.content
+  %h2= link_to d.name, d

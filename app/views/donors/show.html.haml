@@ -1,2 +1,5 @@
-%h1 Donors#show
-%p Find me in app/views/donors/show.html.erb
+%h1= @donor.name
+%h3 Messages
+- @messages.each do |m|
+  %h2= m.title
+  %p= m.content
