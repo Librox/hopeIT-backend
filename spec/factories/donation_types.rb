@@ -2,6 +2,6 @@
 
 FactoryBot.define do
   factory :donation_type do
-    name "MyString"
+    sequence(:name) { |n| "donationtype#{n}" }
   end
 end

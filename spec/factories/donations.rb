@@ -2,8 +2,8 @@
 
 FactoryBot.define do
   factory :donation do
-    donation_type nil
-    donor nil
-    patient nil
+    association :donation_type
+    association :donor
+    association :patient
   end
 end

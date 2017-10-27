@@ -2,6 +2,6 @@
 
 FactoryBot.define do
   factory :payment do
-    donation nil
+    association :donation
   end
 end

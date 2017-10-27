@@ -3,6 +3,6 @@
 FactoryBot.define do
   factory :donor do
     name "MyString"
-    mail "MyString"
+    sequence(:email) { |n| "donor#{n}@example.com" }
   end
 end
