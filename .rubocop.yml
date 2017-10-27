@@ -16,6 +16,7 @@ AllCops:
 BlockLength:
   Exclude:
     - "**/config/**/*.rb"
+    - "**/spec/**/*_spec.rb"
 
 CollectionMethods:
   PreferredMethods:
