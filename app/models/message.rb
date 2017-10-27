@@ -2,5 +2,4 @@
 
 class Message < ApplicationRecord
   belongs_to :donor
-  belongs_to :administrator
 end
