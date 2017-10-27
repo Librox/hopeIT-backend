@@ -1,4 +1,6 @@
 # frozen_string_literal: true
 
 FactoryBot.create_list(:donor, 15)
-FactoryBot.create_list(:message, 30, donor_id: rand(15) + 1)
+30.times do
+  FactoryBot.create(:message, donor: Donor.all.sample)
+end
