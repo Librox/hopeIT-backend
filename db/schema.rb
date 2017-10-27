@@ -35,9 +35,10 @@ ActiveRecord::Schema.define(version: 20171027154242) do
 
   create_table "donors", force: :cascade do |t|
     t.string "name", default: "", null: false
-    t.string "mail", default: "", null: false
+    t.string "email", default: "", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_donors_on_email", unique: true
   end
 
   create_table "patients", force: :cascade do |t|
