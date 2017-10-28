@@ -1,11 +1,7 @@
   default: &default
     adapter: postgresql
-    host: localhost
-    port: 5432
     pool: 5
     timeout: 5000
-    user: backend
-    password: backend
 
   development:
     <<: *default
@@ -14,4 +10,3 @@
   test:
     <<: *default
     database: backend_test
-    host: postgres
