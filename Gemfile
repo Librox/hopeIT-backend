@@ -24,6 +24,7 @@ gem 'devise'
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'html2haml', '~> 2.2'
 gem 'simple_form'
+gem "selectize-rails"
 group :development do
   gem 'rbnacl-libsodium'
   gem 'rbnacl', '< 5.0'

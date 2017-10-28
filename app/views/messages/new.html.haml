@@ -11,5 +11,5 @@
             = simple_form_for @message do |f|
               = f.input :title
               = f.input :content
-              = f.input :donor, collection: @donors
+              = select_tag "donors", options_from_collection_for_select(Donor.all, 'id', "name"), {multiple: true, class: "selectize"}
               = f.button :submit
