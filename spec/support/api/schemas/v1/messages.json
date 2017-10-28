@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "additionalProperties": false, 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "messages": {
+      "id": "/properties/messages", 
+      "items": {
+        "additionalProperties": false, 
+        "id": "/properties/messages/items", 
+        "properties": {
+          "content": {
+            "id": "/properties/messages/items/properties/content", 
+            "type": "string"
+          }, 
+          "created_at": {
+            "id": "/properties/messages/items/properties/created_at", 
+            "type": "string"
+          }, 
+          "id": {
+            "id": "/properties/messages/items/properties/id", 
+            "type": "integer"
+          }, 
+          "title": {
+            "id": "/properties/messages/items/properties/title", 
+            "type": "string"
+          }, 
+          "updated_at": {
+            "id": "/properties/messages/items/properties/updated_at", 
+            "type": "string"
+          }
+        }, 
+        "type": "object"
+      }, 
+      "type": "array"
+    }
+  }, 
+  "type": "object"
+}
