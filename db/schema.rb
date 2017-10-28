@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171028021817) do
+ActiveRecord::Schema.define(version: 20171028111639) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20171028021817) do
     t.integer "amount", default: 0, null: false
     t.string "status", default: "pending", null: false
     t.string "payment_uuid", default: "", null: false
-    t.string "order_id", default: "", null: false
+    t.string "order_id"
     t.index ["donation_id"], name: "index_payments_on_donation_id"
     t.index ["order_id"], name: "index_payments_on_order_id", unique: true
     t.index ["payment_uuid"], name: "index_payments_on_payment_uuid", unique: true

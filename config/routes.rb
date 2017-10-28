@@ -12,6 +12,7 @@ Rails.application.routes.draw do
       resources :patients, only: [:index]
       resources :donations, only: [:create]
       resources :payments, only: [:index]
+      resources :messages, only: [:index]
     end
   end
 end
