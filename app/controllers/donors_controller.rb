@@ -9,12 +9,4 @@ class DonorsController < ApplicationController
     @donor = Donor.find(params[:id])
     @messages = @donor.messages
   end
-
-  def new
-    @donor = Donor.new
-  end
-
-  def create
-    @donor = Donor(params)
-  end
 end

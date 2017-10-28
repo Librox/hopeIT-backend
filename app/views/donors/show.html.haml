@@ -1,5 +1,24 @@
-%h1= @donor.name
-%h3 Messages
-- @messages.each do |m|
-  %h2= m.title
-  %p= m.content
+.content
+  .container-fluid
+    .navbar-header
+      .navbar-brand= @donor.name
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Wiadomości
+          .card-content.table-responsive
+            %table.table
+              %thead.text-primary
+                %th Wiadomość
+                %th Treść
+              %tbody
+                -@messages.each do |m|
+                  %tr
+                    %td= m.title
+                    %td= m.content
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Płatności
+          .card-content.table-responsive
+            %table.table

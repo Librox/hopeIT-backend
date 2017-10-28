@@ -18,29 +18,25 @@
   %body
     .wrapper
       .sidebar{"data-color" => "purple", "data-image" => "../assets/img/sidebar-1.jpg"}
-        /
-          Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
-
-          Tip 2: you can also add an image using data-image tag
         .logo
-          %a.simple-text{:href => "http://www.creative-tim.com"}
+          %a.simple-text{:href => "#"}
             HopeIT
         .sidebar-wrapper
           %ul.nav
-            %li.active
-              %a{:href => "dashboard.html"}
+            %li
+              %a{:href => donors_path}
                 %i.material-icons dashboard
                 %p Darczyńcy
             %li
-              %a{:href => "./user.html"}
+              %a{:href => ""}
                 %i.material-icons person
                 %p Twoje konto
             %li
-              %a{:href => "./table.html"}
+              %a{:href => ""}
                 %i.material-icons comment
                 %p Wiadomości
             %li
-              %a{:href => "./typography.html"}
+              %a{:href => ""}
                 %i.material-icons notifications
                 %p Notyfikacje
       .main-panel
