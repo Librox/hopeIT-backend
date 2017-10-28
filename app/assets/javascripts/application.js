@@ -12,4 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
+//= require jquery
+//= require selectize
+//= require bootstrap-sprockets
+//= require turbolinks
+//= require_tree ./material

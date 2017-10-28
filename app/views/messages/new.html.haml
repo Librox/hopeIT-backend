@@ -1,0 +1,15 @@
+.content
+  .container-fluid
+    .navbar-header
+      .navbar-brand Wysyłanie nowej wiadomości
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Nowa wiadomość
+          .card-content.table-responsive
+            = simple_form_for @message do |f|
+              = f.input :title
+              = f.input :content
+              = select_tag "donors", options_from_collection_for_select(Donor.all, 'id', "name"), {multiple: true, class: "selectize"}
+              = f.button :submit

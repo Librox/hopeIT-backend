@@ -22,4 +22,4 @@
 
 .byebug_history
 vendor/*
-.env.*.development
+.env.*.local

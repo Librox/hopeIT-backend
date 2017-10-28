@@ -11,3 +11,7 @@ end
 donations.each do |donation|
   FactoryBot.create(:payment, :confirmed, donation: donation)
 end
+FactoryBot.create_list(:admin, 3)
+30.times do
+  FactoryBot.create(:message, donor: Donor.all.sample)
+end

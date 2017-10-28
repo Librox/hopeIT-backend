@@ -14,4 +14,3 @@
   test:
     <<: *default
     database: elpis_test
-    host: postgres

@@ -17,6 +17,7 @@ BlockLength:
   Exclude:
     - "**/config/**/*.rb"
     - "**/spec/**/*_spec.rb"
+    - "**/app/admin/**/*.rb"
 
 CollectionMethods:
   PreferredMethods:

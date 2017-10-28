@@ -1,0 +1,18 @@
+.content
+  .container-fluid
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Darczyńcy
+            %p.category Oto lista dobrodziejów o otwartych sercach i portfelach
+          .card-content.table-responsive
+            %table.table
+              %thead.text-primary
+                %th Name
+                %th Mail
+              %tbody
+                -@donors.each do |d|
+                  %tr
+                    %td= link_to d.name, d
+                    %td= d.email

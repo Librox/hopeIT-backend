@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Backend
+    %meta{:charset => "utf-8"}/
+    %link{:href => "app/assets/img/apple-icon.png", :rel => "apple-touch-icon", :sizes => "76x76"}/
+    %link{:href => "app/assets/img/favicon.png", :rel => "icon", :type => "image/png"}/
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    / Fonts and icons
+    %link{:href => "http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css", :rel => "stylesheet"}/
+    %link{:href => "http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons", :rel => "stylesheet", :type => "text/css"}/
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .wrapper
+      .sidebar{"data-color" => "purple", "data-image" => "app/assets/img/sidebar-1.jpg"}
+        .logo
+          %a.simple-text{:href => "#"}
+            HopeIT
+        .sidebar-wrapper
+          %ul.nav
+            %li
+              %a{:href => donors_path}
+                %i.material-icons dashboard
+                %p Darczyńcy
+            %li
+              %a{:href => ""}
+                %i.material-icons person
+                %p Twoje konto
+            %li
+              %a{:href => new_message_path }
+                %i.material-icons comment
+                %p Wiadomości
+            %li
+              %a{:href => ""}
+                %i.material-icons notifications
+                %p Notyfikacje
+      .main-panel
+        = yield
+    %p.notice= notice
+    %p.alert= alert
