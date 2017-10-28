@@ -22,3 +22,13 @@
             %h4.title Płatności
           .card-content.table-responsive
             %table.table
+              %thead.text-primary
+                %th Data
+                %th Kwota
+                %th Status
+              %tbody
+                -@donor.donations.includes([:payment]).each do |d|
+                  %tr
+                    %td=d.created_at
+                    %td=d.amount
+                    %td=d.payment.status

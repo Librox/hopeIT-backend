@@ -1,0 +1,18 @@
+.content
+  .container-fluid
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title Wiadomości
+            %p.category Wszystkie wysłane wiadomości
+          .card-content.table-responsive
+            %table.table
+              %thead.text-primary
+                %th Title
+                %th Content
+              %tbody
+                -@messages.each do |message|
+                  %tr
+                    %td= link_to message.title, message
+                    %td= message.content

@@ -1,0 +1,24 @@
+.content
+  .container-fluid
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title=@message.title
+          .card-content.table-responsive
+            %p=@message.content
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title=t(".sent_to")
+          .card-content.table-responsive
+            %p=@message.content
+    .row
+      .col-md-12
+        .card
+          .card-header{"data-background-color" => "purple"}
+            %h4.title=t(".images")
+          .card-content
+            - @message.images.each do |image|
+              %img{src: url_for(image.url)}

@@ -3,4 +3,5 @@
 class Patient < ApplicationRecord
   has_many :donations, dependent: :restrict_with_error
   has_many :donors, through: :donations
+  mount_uploader :photo, PhotoUploader
 end

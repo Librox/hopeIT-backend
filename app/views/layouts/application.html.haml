@@ -20,7 +20,7 @@
       .sidebar{"data-color" => "purple", "data-image" => "app/assets/img/sidebar-1.jpg"}
         .logo
           %a.simple-text{:href => "#"}
-            HopeIT
+            Elpis
         .sidebar-wrapper
           %ul.nav
             %li
@@ -32,14 +32,19 @@
                 %i.material-icons person
                 %p Twoje konto
             %li
-              %a{:href => new_message_path }
+              %a{:href => messages_path }
                 %i.material-icons comment
                 %p Wiadomości
             %li
-              %a{:href => ""}
+              %a{:href => new_notification_path}
                 %i.material-icons notifications
-                %p Notyfikacje
+                %p Powiadomienia
+            - if admin_signed_in?
+              %li
+                =link_to(destroy_admin_session_path, method: :delete) do
+                  %i.material-icons exit_to_app
+                  %p Wyloguj się
       .main-panel
+        = flash_messages
+
         = yield
-    %p.notice= notice
-    %p.alert= alert

@@ -11,7 +11,7 @@ module Api
       api :POST, "/v1/payu/token", "Get mobile token for PayTouch"
       param_group :payu
       def token
-        donor = Donor.find_by(email: payu_params[:email])
+        donor = find_donor || return
         response = HTTP.post(
           # "https://secure.payu.com/pl/standard/user/oauth/authorize",
           "https://secure.snd.payu.com/pl/standard/user/oauth/authorize",
@@ -24,10 +24,22 @@ module Api
             ext_customer_id: donor.id
           }
         )
-        render json: response.to_s
+        json = JSON.parse(response.to_s)
+        derp = { token: nil }
+        derp[:token] = json
+        render json: derp
       end
 
       private
+
+      def find_donor
+        donor = Donor.find_by(email: payu_params[:email])
+        if donor
+          donor
+        else
+          render json: "User not found", status: :not_found
+        end
+      end
 
       def payu_params
         params.require(:payu).permit(:email)

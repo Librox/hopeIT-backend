@@ -5,7 +5,9 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :letter_opener
 
   # Needed for Devise
-  config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
+  config.action_mailer.default_url_options = { host: "10.99.130.75", port: 3000 }
+
+  config.action_controller.asset_host = "10.99.130.75:3000"
 
   # Enable Bullet
   config.after_initialize do

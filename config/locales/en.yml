@@ -31,3 +31,4 @@
 
 en:
   hello: "Hello world"
+  incoming_message: "You have a new messsage: %{title}"
