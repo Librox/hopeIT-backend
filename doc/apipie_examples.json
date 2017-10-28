@@ -1,0 +1,264 @@
+{
+  "donations#create": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/donations",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "donation": {
+          "amount": 1000,
+          "donation_type_id": 1,
+          "patient_id": 1,
+          "payment_uuid": "89066861-f063-41e1-b391-bac3723b88db"
+        }
+      },
+      "response_data": {
+        "donation": {
+          "id": 1,
+          "amount": 1000,
+          "donor_id": 1,
+          "donation_type_id": 1,
+          "created_at": "2017-10-27T23:45:14.171Z",
+          "updated_at": "2017-10-27T23:45:14.171Z",
+          "payment": {
+            "id": 1,
+            "amount": 0,
+            "payment_uuid": "89066861-f063-41e1-b391-bac3723b88db",
+            "status": "pending",
+            "created_at": "2017-10-27T23:45:14.191Z",
+            "updated_at": "2017-10-27T23:45:14.191Z"
+          }
+        }
+      },
+      "code": 201,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/v1/donations",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "donation": {
+          "amount": 1000,
+          "donation_type_id": 2,
+          "patient_id": 2,
+          "payment_uuid": "0b38f782-7a7b-4f2d-8b9f-49d2442ce860"
+        }
+      },
+      "response_data": {
+        "donation": {
+          "id": 2,
+          "amount": 1000,
+          "donor_id": 2,
+          "donation_type_id": 2,
+          "created_at": "2017-10-27T23:45:14.228Z",
+          "updated_at": "2017-10-27T23:45:14.228Z",
+          "payment": {
+            "id": 2,
+            "amount": 0,
+            "payment_uuid": "0b38f782-7a7b-4f2d-8b9f-49d2442ce860",
+            "status": "pending",
+            "created_at": "2017-10-27T23:45:14.232Z",
+            "updated_at": "2017-10-27T23:45:14.232Z"
+          }
+        }
+      },
+      "code": 201,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "patients#index": [
+    {
+      "verb": "GET",
+      "path": "/api/v1/patients",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "patients": [
+          {
+            "id": 7,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.860Z",
+            "updated_at": "2017-10-27T23:45:14.860Z"
+          },
+          {
+            "id": 8,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.865Z",
+            "updated_at": "2017-10-27T23:45:14.865Z"
+          },
+          {
+            "id": 9,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.870Z",
+            "updated_at": "2017-10-27T23:45:14.870Z"
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "GET",
+      "path": "/api/v1/patients",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": null,
+      "response_data": {
+        "patients": [
+          {
+            "id": 10,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.915Z",
+            "updated_at": "2017-10-27T23:45:14.915Z"
+          },
+          {
+            "id": 11,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.918Z",
+            "updated_at": "2017-10-27T23:45:14.918Z"
+          },
+          {
+            "id": 12,
+            "name": "MyString",
+            "description": "MyText",
+            "photo": "MyString",
+            "created_at": "2017-10-27T23:45:14.922Z",
+            "updated_at": "2017-10-27T23:45:14.922Z"
+          }
+        ]
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "payments#payu": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/payments/payu",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "order": {
+          "orderId": "123test123",
+          "extOrderId": "testpaymentuuid",
+          "totalAmount": 1000,
+          "status": "COMPLETED"
+        }
+      },
+      "response_data": {
+        "id": 3,
+        "amount": 1000,
+        "status": "COMPLETED",
+        "order_id": "123test123",
+        "payment_uuid": "testpaymentuuid"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/v1/payments/payu",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "order": {
+          "orderId": "123test123",
+          "extOrderId": "testpaymentuuid",
+          "totalAmount": 1000,
+          "status": "COMPLETED"
+        }
+      },
+      "response_data": {
+        "id": 4,
+        "amount": 1000,
+        "status": "COMPLETED",
+        "order_id": "123test123",
+        "payment_uuid": "testpaymentuuid"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ],
+  "payu#token": [
+    {
+      "verb": "POST",
+      "path": "/api/v1/payu/token",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "payu": {
+          "email": "herp@derp.in"
+        }
+      },
+      "response_data": {
+        "access_token": "0c311086-6810-472d-8885-0e47a0252f92",
+        "token_type": "bearer",
+        "refresh_token": "e2a6d500-ff23-465c-9ab4-1f374ea3e951",
+        "expires_in": 43199,
+        "scope": "mobile.sdk",
+        "grant_type": "trusted_merchant"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    },
+    {
+      "verb": "POST",
+      "path": "/api/v1/payu/token",
+      "versions": [
+        "1"
+      ],
+      "query": null,
+      "request_data": {
+        "payu": {
+          "email": "herp@derp.in"
+        }
+      },
+      "response_data": {
+        "access_token": "270d69a8-db2d-4580-9f99-b3f477c3fa89",
+        "token_type": "bearer",
+        "refresh_token": "8a5270ec-8f83-4c27-9d8f-c4a88de66d7b",
+        "expires_in": 43199,
+        "scope": "mobile.sdk",
+        "grant_type": "trusted_merchant"
+      },
+      "code": 200,
+      "show_in_doc": 1,
+      "recorded": true
+    }
+  ]
+}

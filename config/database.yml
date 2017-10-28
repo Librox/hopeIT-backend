@@ -1,17 +1,17 @@
   default: &default
     adapter: postgresql
-    host: localhost
-    port: 5432
+    host: <%= ENV.fetch("DATABASE_HOST", nil) %>
+    port: <%= ENV.fetch("DATABASE_PORT", nil) %>
     pool: 5
     timeout: 5000
-    user: backend
-    password: backend
+    user: <%= ENV.fetch("DATABASE_USER", nil) %>
+    password: <%= ENV.fetch("DATABASE_PASSWORD", nil) %>
 
   development:
     <<: *default
-    database: backend_development
+    database: elpis_development
 
   test:
     <<: *default
-    database: backend_test
+    database: elpis_test
     host: postgres

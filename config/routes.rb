@@ -1,5 +1,14 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  apipie
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      post "payu/token", to: "payu#token"
+      post "payments/payu", to: "payments#payu"
+      resources :patients, only: [:index]
+      resources :donations, only: [:create]
+      resources :payments, only: [:index]
+    end
+  end
 end

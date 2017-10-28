@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "json_matchers/rspec"
+
 Dir["./spec/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|

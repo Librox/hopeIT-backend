@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#", 
+  "definitions": {}, 
+  "id": "http://example.com/example.json", 
+  "properties": {
+    "donation": {
+      "id": "/properties/donation", 
+      "properties": {
+        "amount": {
+          "id": "/properties/donation/properties/amount", 
+          "type": "integer"
+        }, 
+        "created_at": {
+          "id": "/properties/donation/properties/created_at", 
+          "type": "string"
+        }, 
+        "donation_type_id": {
+          "id": "/properties/donation/properties/donation_type_id", 
+          "type": "integer"
+        }, 
+        "donor_id": {
+          "id": "/properties/donation/properties/donor_id", 
+          "type": "integer"
+        }, 
+        "id": {
+          "id": "/properties/donation/properties/id", 
+          "type": "integer"
+        }, 
+        "payment": {
+          "id": "/properties/donation/properties/payment", 
+          "properties": {
+            "payment_uuid": {
+              "id": "/properties/donation/properties/payment/properties/payment_uuid", 
+              "type": "string"
+            }, 
+            "amount": {
+              "id": "/properties/donation/properties/payment/properties/amount", 
+              "type": "integer"
+            }, 
+            "created_at": {
+              "id": "/properties/donation/properties/payment/properties/created_at", 
+              "type": "string"
+            }, 
+            "id": {
+              "id": "/properties/donation/properties/payment/properties/id", 
+              "type": "integer"
+            }, 
+            "status": {
+              "id": "/properties/donation/properties/payment/properties/status", 
+              "type": "string"
+            }, 
+            "updated_at": {
+              "id": "/properties/donation/properties/payment/properties/updated_at", 
+              "type": "string"
+            }
+          }, 
+          "type": "object"
+        }, 
+        "updated_at": {
+          "id": "/properties/donation/properties/updated_at", 
+          "type": "string"
+        }
+      }, 
+      "type": "object"
+    }
+  }, 
+  "type": "object"
+}
