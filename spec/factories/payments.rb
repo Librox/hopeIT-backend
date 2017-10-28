@@ -7,5 +7,9 @@ FactoryBot.define do
     status "pending"
     order_id { SecureRandom.uuid }
     association :donation
+
+    trait :confirmed do
+      status "completed"
+    end
   end
 end

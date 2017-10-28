@@ -17,6 +17,8 @@ gem 'carrierwave'
 gem 'carrierwave-base64'
 gem 'jbuilder'
 gem 'http'
+gem 'dotenv'
+gem 'dotenv-rails'
 group :development do
   gem 'rbnacl-libsodium'
   gem 'rbnacl', '< 5.0'
